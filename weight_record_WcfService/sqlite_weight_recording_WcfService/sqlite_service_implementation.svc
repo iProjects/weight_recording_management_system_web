@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="sqlite_weight_recording_WcfService.sqlite_service_implementation" %>

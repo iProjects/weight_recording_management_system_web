@@ -1,0 +1,11 @@
+D:\wakxpx\csharp\visualstudio\weight_recording_csharp\weight_recording_dal\bin\Debug\weight_recording_dal.dll.config
+D:\wakxpx\csharp\visualstudio\weight_recording_csharp\weight_recording_dal\bin\Debug\weight_recording_dal.dll
+D:\wakxpx\csharp\visualstudio\weight_recording_csharp\weight_recording_dal\bin\Debug\weight_recording_dal.pdb
+D:\wakxpx\csharp\visualstudio\weight_recording_csharp\weight_recording_dal\obj\Debug\weight_recording_dal.dll
+D:\wakxpx\csharp\visualstudio\weight_recording_csharp\weight_recording_dal\obj\Debug\weight_recording_dal.pdb
+D:\wakxpx\csharp\visualstudio\weight_recording_WinsForm\weight_recording_dal\bin\Debug\weight_recording_dal.dll.config
+D:\wakxpx\csharp\visualstudio\weight_recording_WinsForm\weight_recording_dal\bin\Debug\weight_recording_dal.dll
+D:\wakxpx\csharp\visualstudio\weight_recording_WinsForm\weight_recording_dal\bin\Debug\weight_recording_dal.pdb
+D:\wakxpx\csharp\visualstudio\weight_recording_WinsForm\weight_recording_dal\obj\Debug\weight_recording_dal.dll
+D:\wakxpx\csharp\visualstudio\weight_recording_WinsForm\weight_recording_dal\obj\Debug\weight_recording_dal.pdb
+D:\wakxpx\csharp\visualstudio\weight_recording_WinsForm\weight_recording_dal\obj\Debug\weight_recording_dal.csprojResolveAssemblyReference.cache

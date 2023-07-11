@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4be1dcef-9060-4b24-9485-5c4e3732d2d3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:7777/weight_record_wcf_Service_host.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="weight_record_wcf_Service_host.wsdl" MetadataType="Wsdl" ID="61c9b65e-bc76-41af-b553-b6028065c83d" SourceId="1" SourceUrl="http://localhost:7777/weight_record_wcf_Service_host.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="weight_record_wcf_Service_host.xsd" MetadataType="Schema" ID="e19e3be1-2307-42c4-b2ca-b8dd5a007d48" SourceId="1" SourceUrl="http://localhost:7777/weight_record_wcf_Service_host.svc?xsd=xsd0" />
+    <MetadataFile FileName="weight_record_wcf_Service_host.disco" MetadataType="Disco" ID="da165146-0520-4d89-964a-6aca7054fa3e" SourceId="1" SourceUrl="http://localhost:7777/weight_record_wcf_Service_host.svc?disco" />
+    <MetadataFile FileName="weight_record_wcf_Service_host1.xsd" MetadataType="Schema" ID="8a972d2d-d32c-4161-ba85-34edb01a37eb" SourceId="1" SourceUrl="http://localhost:7777/weight_record_wcf_Service_host.svc?xsd=xsd2" />
+    <MetadataFile FileName="weight_record_wcf_Service_host2.xsd" MetadataType="Schema" ID="96419903-b171-444f-97af-d0445cc88aea" SourceId="1" SourceUrl="http://localhost:7777/weight_record_wcf_Service_host.svc?xsd=xsd1" />
+    <MetadataFile FileName="weight_record_service.wsdl" MetadataType="Wsdl" ID="f9163507-1274-4bfb-9e1c-60dd33b7461f" SourceId="1" SourceUrl="http://localhost:7777/weight_record_wcf_Service_host.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

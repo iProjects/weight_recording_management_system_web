@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "list";
+}
+
+<div id="div_navigation">
+    <a id="btn_navigation" class="btn btn-success" href="create.php">create weight</a>
+    <div id="progress_bar" class="progress-bar progress-bar-striped indeterminate"></div>
+    <img id="img_logo" src="~/images/logo.png">
+</div>
+
+<div id="div_weights_list">
+
+    <div class="input-box input-group">
+        <h1 id='header'>weights list [  ]</h1>
+    </div>
+
+    <div class="card-body div_weight_item">
+        <table class="table table-striped table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">weight</th>
+                    <th scope="col">date</th>
+                    <th scope="col">status</th>
+                    <th scope="col">created date</th>
+                    <th scope="col">app</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+
+                <tr class="no_entries_row">
+                    <td colspan="7">No Record</td>
+                </tr>
+
+                <tr class="table-primary">
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

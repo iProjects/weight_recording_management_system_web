@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>weights app - @ViewBag.Title</title>
+    <link rel="icon" type="image/png" href="~/images/logo.png" />
+    <link rel="icon" type="image/x-icon" href="~/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/favicon.ico" />
+
+    @Styles.Render("~/Content/css")
+
+
+</head>
+
+<body>
+
+    @RenderBody()
+
+    <div id="div_messages"></div>
+
+    <div id="div_footer">
+        <span id="lblcopyright">copyright</span>
+        <span id="lblfooterdate">date</span>
+        <span id="lblfootertime">time</span>
+        <span id="lblfooterelapsedtime">elapsed</span>
+    </div>
+
+    @Scripts.Render("~/bundles/myscripts")
+
+</body>
+</html>

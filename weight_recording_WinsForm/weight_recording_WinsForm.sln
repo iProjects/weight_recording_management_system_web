@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "weight_recording_dal", "weight_recording_dal\weight_recording_dal.csproj", "{8DB1E497-3067-46DB-AAF4-3273D317C3C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "weight_recording_ui", "weight_recording_ui\weight_recording_ui.csproj", "{A822851B-9608-472B-8EE6-AAB6A0A0427D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DB1E497-3067-46DB-AAF4-3273D317C3C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB1E497-3067-46DB-AAF4-3273D317C3C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB1E497-3067-46DB-AAF4-3273D317C3C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB1E497-3067-46DB-AAF4-3273D317C3C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A822851B-9608-472B-8EE6-AAB6A0A0427D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A822851B-9608-472B-8EE6-AAB6A0A0427D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A822851B-9608-472B-8EE6-AAB6A0A0427D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A822851B-9608-472B-8EE6-AAB6A0A0427D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="weight_record_wcf_Service_host" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\wakxpx\\csharp\\visualstudio\\weight_record_WcfService\\weight_record_WcfService_host\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\wakxpx\\csharp\\visualstudio\\weight_record_WcfService\\weight_record_WcfService_host\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

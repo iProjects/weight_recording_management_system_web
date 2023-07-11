@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A524CEF2-31F4-4B93-94A0-8286CCEBCF94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>test_service_ui</RootNamespace>
+    <AssemblyName>test_service_ui</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>test_service_ui.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>weight_scale.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Service References\sqlite_weight_recording_WcfService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\weight_record_service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test_service_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test_service_form.Designer.cs">
+      <DependentUpon>test_service_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test_service_form.resx">
+      <DependentUpon>test_service_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\sqlite_weight_recording_WcfService.responsedto.datasource" />
+    <None Include="Properties\DataSources\sqlite_weight_recording_WcfService.weight_record_dto.datasource" />
+    <None Include="Properties\DataSources\weight_recording_service_dal.responsedto.datasource" />
+    <None Include="Properties\DataSources\weight_recording_service_dal.weight_record_dto.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\sqlite_weight_recording_WcfService\sqlite_service_implementation.wsdl" />
+    <None Include="Service References\sqlite_weight_recording_WcfService\sqlite_service_implementation.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sqlite_weight_recording_WcfService\sqlite_service_implementation1.wsdl" />
+    <None Include="Service References\sqlite_weight_recording_WcfService\sqlite_service_implementation1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sqlite_weight_recording_WcfService\sqlite_service_implementation2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sqlite_weight_recording_WcfService\test_service_ui.sqlite_weight_recording_WcfService.responsedto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\sqlite_weight_recording_WcfService\test_service_ui.sqlite_weight_recording_WcfService.weight_record_dto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\weight_record_service\weight_record_service.wsdl" />
+    <None Include="Service References\weight_record_service\weight_record_wcf_Service_host.wsdl" />
+    <None Include="Service References\weight_record_service\weight_record_wcf_Service_host.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\weight_record_service\weight_record_wcf_Service_host1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\weight_record_service\weight_record_wcf_Service_host2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\weight_recording_service_dal\weight_recording_service_dal.csproj">
+      <Project>{30d547f8-6ac0-43ce-91f9-8baf3fee4d0b}</Project>
+      <Name>weight_recording_service_dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\weight_recording_WcfServiceLibrary\weight_recording_WcfServiceLibrary.csproj">
+      <Project>{7f6aa9b9-17ab-45ac-be82-e87f0a562a90}</Project>
+      <Name>weight_recording_WcfServiceLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\refresh.ico" />
+    <Content Include="images\sync.png" />
+    <Content Include="images\weight_scale.ico" />
+    <None Include="Service References\sqlite_weight_recording_WcfService\sqlite_service_implementation.disco" />
+    <None Include="Service References\sqlite_weight_recording_WcfService\configuration91.svcinfo" />
+    <None Include="Service References\sqlite_weight_recording_WcfService\configuration.svcinfo" />
+    <None Include="Service References\sqlite_weight_recording_WcfService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\weight_record_service\weight_record_wcf_Service_host.disco" />
+    <None Include="Service References\weight_record_service\configuration91.svcinfo" />
+    <None Include="Service References\weight_record_service\configuration.svcinfo" />
+    <None Include="Service References\weight_record_service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="TimeStampObserver.xml" />
+    <Content Include="weight_scale.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\sqlite_weight_recording_WcfService\" />
+    <WCFMetadataStorage Include="Service References\weight_record_service\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

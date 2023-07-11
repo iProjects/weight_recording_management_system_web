@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:7777/weight_record_wcf_Service_host.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:7777/weight_record_wcf_Service_host.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" />
+      <xsd:import schemaLocation="http://localhost:7777/weight_record_wcf_Service_host.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="iweight_record_service_getallweightsinservice_InputMessage">
+    <wsdl:part name="parameters" element="tns:getallweightsinservice" />
+  </wsdl:message>
+  <wsdl:message name="iweight_record_service_getallweightsinservice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getallweightsinserviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="iweight_record_service_getallweightsinservice_service_faultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" name="detail" element="q1:service_fault" />
+  </wsdl:message>
+  <wsdl:message name="iweight_record_service_createweightinservice_InputMessage">
+    <wsdl:part name="parameters" element="tns:createweightinservice" />
+  </wsdl:message>
+  <wsdl:message name="iweight_record_service_createweightinservice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createweightinserviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="iweight_record_service_createweightinservice_service_faultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" name="detail" element="q2:service_fault" />
+  </wsdl:message>
+  <wsdl:portType name="iweight_record_service">
+    <wsdl:operation name="getallweightsinservice">
+      <wsdl:input wsaw:Action="http://tempuri.org/iweight_record_service/getallweightsinservice" message="tns:iweight_record_service_getallweightsinservice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iweight_record_service/getallweightsinserviceResponse" message="tns:iweight_record_service_getallweightsinservice_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/iweight_record_service/getallweightsinserviceservice_faultFault" name="service_faultFault" message="tns:iweight_record_service_getallweightsinservice_service_faultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createweightinservice">
+      <wsdl:input wsaw:Action="http://tempuri.org/iweight_record_service/createweightinservice" message="tns:iweight_record_service_createweightinservice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/iweight_record_service/createweightinserviceResponse" message="tns:iweight_record_service_createweightinservice_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/iweight_record_service/createweightinserviceservice_faultFault" name="service_faultFault" message="tns:iweight_record_service_createweightinservice_service_faultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:iweight_record_service">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getallweightsinservice">
+      <soap:operation soapAction="http://tempuri.org/iweight_record_service/getallweightsinservice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="service_faultFault">
+        <soap:fault use="literal" name="service_faultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="createweightinservice">
+      <soap:operation soapAction="http://tempuri.org/iweight_record_service/createweightinservice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="service_faultFault">
+        <soap:fault use="literal" name="service_faultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

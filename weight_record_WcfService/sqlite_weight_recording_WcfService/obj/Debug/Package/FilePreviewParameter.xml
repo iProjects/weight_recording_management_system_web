@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="sqlite_weight_recording_WcfService" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\wakxpx\\csharp\\visualstudio\\weight_record_WcfService\\sqlite_weight_recording_WcfService\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\wakxpx\\csharp\\visualstudio\\weight_record_WcfService\\sqlite_weight_recording_WcfService\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

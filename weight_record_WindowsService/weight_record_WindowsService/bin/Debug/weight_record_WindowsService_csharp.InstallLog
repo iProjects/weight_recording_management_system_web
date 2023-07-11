@@ -1,0 +1,15 @@
+﻿Installing assembly 'D:\wakxpx\csharp\visualstudio\weight_record_WindowsService_csharp\weight_record_WindowsService_csharp\bin\Debug\weight_record_WindowsService_csharp.exe'.
+Affected parameters are:
+   i = 
+   logfile = D:\wakxpx\csharp\visualstudio\weight_record_WindowsService_csharp\weight_record_WindowsService_csharp\bin\Debug\weight_record_WindowsService_csharp.InstallLog
+   assemblypath = D:\wakxpx\csharp\visualstudio\weight_record_WindowsService_csharp\weight_record_WindowsService_csharp\bin\Debug\weight_record_WindowsService_csharp.exe
+   logtoconsole = 
+Installing service weight record service...
+Service weight record service has been successfully installed.
+Creating EventLog source weight record service in log Application...
+Committing assembly 'D:\wakxpx\csharp\visualstudio\weight_record_WindowsService_csharp\weight_record_WindowsService_csharp\bin\Debug\weight_record_WindowsService_csharp.exe'.
+Affected parameters are:
+   i = 
+   logfile = D:\wakxpx\csharp\visualstudio\weight_record_WindowsService_csharp\weight_record_WindowsService_csharp\bin\Debug\weight_record_WindowsService_csharp.InstallLog
+   assemblypath = D:\wakxpx\csharp\visualstudio\weight_record_WindowsService_csharp\weight_record_WindowsService_csharp\bin\Debug\weight_record_WindowsService_csharp.exe
+   logtoconsole = 

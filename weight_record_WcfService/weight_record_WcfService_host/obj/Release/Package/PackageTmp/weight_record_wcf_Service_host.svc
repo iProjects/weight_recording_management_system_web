@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="weight_recording_WcfServiceLibrary.weight_record_service" %>

@@ -1,0 +1,17 @@
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\bin\Debug\test_service_with_ui.exe.config
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\bin\Debug\test_service_with_ui.exe
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\bin\Debug\test_service_with_ui.pdb
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\bin\Debug\weight_recording_service_dal.dll
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\bin\Debug\Npgsql.dll
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\bin\Debug\Mono.Security.dll
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\bin\Debug\weight_recording_service_dal.pdb
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\bin\Debug\Npgsql.xml
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\obj\Debug\test_service_with_ui.csprojResolveAssemblyReference.cache
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\obj\Debug\test_service_with_ui.test_service_from.resources
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\obj\Debug\test_service_with_ui.Properties.Resources.resources
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\obj\Debug\test_service_with_ui.csproj.GenerateResource.Cache
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\obj\Debug\test_service_with_ui.exe
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\obj\Debug\test_service_with_ui.pdb
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\bin\Debug\weight_recording_WcfServiceLibrary.dll
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\bin\Debug\weight_recording_WcfServiceLibrary.pdb
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\test_service_with_ui\bin\Debug\test_service_ui.exe.config

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:7777/weight_record_wcf_Service_host.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" />
+  <xs:element name="getallweightsinservice">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getallweightsinserviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" minOccurs="0" name="getallweightsinserviceResult" nillable="true" type="q1:ArrayOfweight_record_dto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_all_active_weights_in_service">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_all_active_weights_in_serviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" minOccurs="0" name="get_all_active_weights_in_serviceResult" nillable="true" type="q2:ArrayOfweight_record_dto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createweightinservice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" minOccurs="0" name="service_dto" nillable="true" type="q3:weight_record_dto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createweightinserviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" minOccurs="0" name="createweightinserviceResult" nillable="true" type="q4:responsedto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateweightinservice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" minOccurs="0" name="service_dto" nillable="true" type="q5:weight_record_dto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateweightinserviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" minOccurs="0" name="updateweightinserviceResult" nillable="true" type="q6:responsedto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteweightinservice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" minOccurs="0" name="service_dto" nillable="true" type="q7:weight_record_dto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteweightinserviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" minOccurs="0" name="deleteweightinserviceResult" nillable="true" type="q8:responsedto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delete_weight_by_changing_status_in_service">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" minOccurs="0" name="service_dto" nillable="true" type="q9:weight_record_dto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="delete_weight_by_changing_status_in_serviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/weight_recording_service_dal" minOccurs="0" name="delete_weight_by_changing_status_in_serviceResult" nillable="true" type="q10:responsedto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

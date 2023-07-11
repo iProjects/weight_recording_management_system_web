@@ -1,0 +1,13 @@
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\bin\x86\Debug\weight_recording_service_dal.dll
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\bin\x86\Debug\weight_recording_service_dal.pdb
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\bin\x86\Debug\Mono.Security.dll
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\bin\x86\Debug\MySql.Data.dll
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\bin\x86\Debug\MySql.Data.Entity.dll
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\bin\x86\Debug\Npgsql.dll
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\bin\x86\Debug\System.Data.SQLite.dll
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\bin\x86\Debug\MySql.Data.xml
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\bin\x86\Debug\Npgsql.xml
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\bin\x86\Debug\System.Data.SQLite.xml
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\obj\x86\Debug\weight_recording_service_dal.csprojResolveAssemblyReference.cache
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\obj\x86\Debug\weight_recording_service_dal.dll
+D:\wakxpx\csharp\visualstudio\weight_record_WcfService_csharp\weight_recording_service_dal\obj\x86\Debug\weight_recording_service_dal.pdb

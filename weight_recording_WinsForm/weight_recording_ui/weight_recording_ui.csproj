@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A822851B-9608-472B-8EE6-AAB6A0A0427D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>weight_recording_ui</RootNamespace>
+    <AssemblyName>weight_recording_ui</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>weight.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>weight_recording_ui.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=4.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutform.Designer.cs">
+      <DependentUpon>aboutform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addweightform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addweightform.Designer.cs">
+      <DependentUpon>addweightform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_form.Designer.cs">
+      <DependentUpon>login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports\chartform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports\chartform.Designer.cs">
+      <DependentUpon>chartform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editweightform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editweightform.Designer.cs">
+      <DependentUpon>editweightform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helper.cs" />
+    <Compile Include="listweightform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listweightform.Designer.cs">
+      <DependentUpon>listweightform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_weight_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_weight_form.Designer.cs">
+      <DependentUpon>main_weight_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports\CreateExcelDoc.cs" />
+    <Compile Include="reports\CrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="reports\crystal_report_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports\crystal_report_form.Designer.cs">
+      <DependentUpon>crystal_report_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports\excelbuilder.cs" />
+    <Compile Include="reports\notificationdto.cs" />
+    <Compile Include="reports\notificationmessageEventArgs.cs" />
+    <Compile Include="reports\pdfbuilder.cs" />
+    <Compile Include="reports\pdfgen.cs" />
+    <Compile Include="reports\pdfviewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports\pdfviewer.Designer.cs">
+      <DependentUpon>pdfviewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports\reportbuilder.cs" />
+    <Compile Include="reports\reportmodel.cs" />
+    <Compile Include="reports\Utils.cs" />
+    <Compile Include="reports\VVX_File.cs" />
+    <Compile Include="reports\VVX_FileDialog.cs" />
+    <Compile Include="reports\VVX_ImageTools.cs" />
+    <Compile Include="reports\VVX_MsgBox.cs" />
+    <Compile Include="reports\weightreportsform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports\weightreportsform.Designer.cs">
+      <DependentUpon>weightreportsform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reports\weightsDataSet.cs">
+      <DependentUpon>weightsDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\weightsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>weightsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="aboutform.resx">
+      <DependentUpon>aboutform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addweightform.resx">
+      <DependentUpon>addweightform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_form.resx">
+      <DependentUpon>login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\chartform.resx">
+      <DependentUpon>chartform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editweightform.resx">
+      <DependentUpon>editweightform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listweightform.resx">
+      <DependentUpon>listweightform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_weight_form.resx">
+      <DependentUpon>main_weight_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\CrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\crystal_report_form.resx">
+      <DependentUpon>crystal_report_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\pdfviewer.resx">
+      <DependentUpon>pdfviewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\weightreportsform.resx">
+      <DependentUpon>weightreportsform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="reports\weightsDataSet.xsc">
+      <DependentUpon>weightsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="reports\weightsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>weightsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="reports\weightsDataSet.xss">
+      <DependentUpon>weightsDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\weight_recording_dal\weight_recording_dal.csproj">
+      <Project>{8db1e497-3067-46db-aaf4-3273d317c3c8}</Project>
+      <Name>weight_recording_dal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about\about.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="about\about.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="about\about.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\closel.png" />
+    <Content Include="images\close_icon.ico" />
+    <Content Include="images\search.ico" />
+    <Content Include="resources\Dollar.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\add.ico" />
+    <Content Include="images\chart.ico" />
+    <Content Include="images\delete.ico" />
+    <Content Include="images\edit.ico" />
+    <Content Include="images\filter.ico" />
+    <Content Include="images\filter_icon.ico" />
+    <Content Include="images\weight.ico" />
+    <Content Include="images\weight.png" />
+    <Content Include="images\weight_app.ico" />
+    <Content Include="images\weight_app.png" />
+    <Content Include="images\weight_scale.ico" />
+    <Content Include="libs\itextsharp.dll" />
+    <Content Include="libs\iTextSharp.xml" />
+    <Content Include="resources\favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\powermage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\splash_screen.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\splash_screen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TimeStampObserver.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="weight.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
